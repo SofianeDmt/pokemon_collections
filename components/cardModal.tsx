@@ -82,7 +82,7 @@ export default function CardModal({
         ? ReactDOM.createPortal(
             <div className="fixed inset-0 bg-gray-400 bg-opacity-80 transition-opacity">
                 <div
-                    className="absolute h-fit p-6 bg-white text-black top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition overflow-y-auto rounded-lg shadow-2xl md:grid md:grid-cols-3 min-w-[80%] max-h-[80%] z-50">
+                    className="absolute h-fit p-6 bg-white text-black top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition overflow-y-auto rounded-lg shadow-2xl md:grid md:grid-cols-3 min-w-[80%] max-h-[80%] z-10">
                     <div className="col-span-3 relative">
                         <button onClick={() => closeModal()}
                                 className="absolute flex items-center justify-center rounded-md w-10 h-10 hover:opacity-60 bg-gray-300 -top-6 -right-6">
@@ -94,7 +94,7 @@ export default function CardModal({
                             </svg>
                         </button>
                     </div>
-                    <Tilt key={pokemon?.id} className="Tilt col-span-1 h-fit" style={{
+                    <Tilt key={pokemon?.id} className="Tilt col-span-1 h-fit hidden lg:block" style={{
                         width: "fit-content",
                         backgroundColor: "#fff", borderRadius: "20px", backgroundOpacity: 100
                     }}>
@@ -104,6 +104,11 @@ export default function CardModal({
                             className="rounded-lg shadow-2xl"
                         />
                     </Tilt>
+                    <img
+                        alt="pokemon"
+                        src={pokemon?.pokemon?.images?.large}
+                        className="rounded-lg shadow-2xl block lg:hidden"
+                    />
                     <div className="p-4 flex-col text-center sm:p-6 md:col-span-2 lg:p-8">
                         <div className="flex justify-between">
                             <p className="md:text-sm text-xs font-semibold uppercase tracking-widest">

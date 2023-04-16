@@ -61,7 +61,8 @@ export default function Hero(): JSX.Element {
                     <div className="grid lg:grid-cols-6 md:grid-cols-4 mx-10 max-w-screen justify-center items-center gap-10 my-10">
                         {isLoading && <Loading/>}
                         {getPokemons?.data?.map((pokemon: any) => (
-                            <Tilt key={pokemon?.id} className="Tilt" style={{
+                            <>
+                            <Tilt key={pokemon?.id} className="Tilt hidden lg:block" style={{
                                 width: "fit-content",
                                 backgroundColor: "#fff", borderRadius: "20px"
                             }}>
@@ -69,6 +70,10 @@ export default function Hero(): JSX.Element {
                                      className="hover:scale-125 transition drop-shadow-xl" src={pokemon?.images?.small}
                                      alt={pokemon?.name} height={200} width={200}/>
                             </Tilt>
+                            <img key={pokemon?.id} onClick={() => openModal({pokemon})}
+                                                   className="hover:scale-125 transition drop-shadow-xl block lg:hidden" src={pokemon?.images?.small}
+                                                   alt={pokemon?.name} height={200} width={200}/>
+                            </>
                         ))}
                         {getPokemons?.data?.length === 0 &&
                             <p className="col-span-10 text-center text-md font-light text-black">Aucun Pokémon
