@@ -41,7 +41,7 @@ export default function Favoris(): JSX.Element {
         <main className="flex-col min-h-screen items-center justify-between h-screen text-center bg-gray-200 text-black">
             <div>
                 <h2 className="text-4xl font-black py-5">Mes favoris</h2>
-                <p className="my-2 text-xs font-light">Les favoris utilisent le local storage du navigateur car aucune base de données {"n'est"} disponible, veuillez ne pas clear la clé "PokeFav" de celui-ci.</p>
+                <p className="my-2 text-xs font-light">Les favoris utilisent le local storage du navigateur car aucune base de données {"n'est"} disponible, veuillez ne pas clear la clé &quot;PokeFav&quot; de celui-ci.</p>
             </div>
             <div className="md:grid lg:grid-cols-8 md:grid-cols-5 flex flex-col w-full justify-center items-center gap-10 mb-10 mt-20 p-10 rounded-lg">
                 {localFav === null || localFav === undefined || localFav.length === 0 ?
