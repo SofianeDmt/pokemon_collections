@@ -137,7 +137,7 @@ export default function Search(): JSX.Element {
                             </div>
 
                             <div>
-                                <label onClick={()=> setTypeVisible(!typeVisible)} className="my-2 flex items-center w-full">Types {arrow}</label>
+                                <label onClick={()=> setTypeVisible(!typeVisible)} className="my-2 flex items-center w-full cursor-pointer">Types {arrow}</label>
                                 {typeVisible &&
                                 <div className="grid grid-cols-1 gap-4 text-center sm:grid-cols-3">
                                     {types.data.map((types: string, index: number) => {
@@ -152,7 +152,7 @@ export default function Search(): JSX.Element {
                             </div>
 
                             <div>
-                                <label onClick={()=> setRarityVisible(!rarityVisible)} className="my-2 flex items-center w-full">Rareté {arrow}</label>
+                                <label onClick={()=> setRarityVisible(!rarityVisible)} className="my-2 flex items-center w-full cursor-pointer">Rareté {arrow}</label>
                                 {rarityVisible &&
                                 <div className="grid grid-cols-1 gap-4 text-center sm:grid-cols-7">
                                     {rarities.data.map((rarities: string, index: number) => {
@@ -167,7 +167,7 @@ export default function Search(): JSX.Element {
                             </div>
 
                             <div>
-                                <label onClick={()=> setSetsVisible(!setsVisible)} className="my-2 flex items-center w-full">Sets {arrow}</label>
+                                <label onClick={()=> setSetsVisible(!setsVisible)} className="my-2 flex items-center w-full cursor-pointer">Sets {arrow}</label>
                                 {setsVisible &&
                                 <div className="grid grid-cols-1 gap-4 text-center lg:grid-cols-6 md:grid-cols-5">
                                     {isLoading && <Loading />}

@@ -1,5 +1,5 @@
 import Link from "next/link";
-export default function Navbar() {
+export default function Navbar(): JSX.Element {
 
     return (
         <nav className="bg-gray-200">
