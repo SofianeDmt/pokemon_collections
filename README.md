@@ -6,7 +6,7 @@ Les technologies imposés étaient ReactJS pour le front et NodeJS pour le back 
 
 Pour la partie style j'ai plutôt opté pour TailwindCSS car puissant et facile à gérer pour le respsonsive.
 
-Une feature de favoris utilisant le localStorage navigateur a était implémentée sur le site pour pouvoir lister les cartes en sa possession, des commentaires dans le code sont disponible pour savoir comprendre le fonctionnement de tout le site.
+Une feature de favoris utilisant le localStorage navigateur a était implémentée sur le site pour pouvoir lister les cartes en sa possession, des commentaires dans le code sont disponible pour comprendre le fonctionnement de tout le site.
 
 
 ### Installation
