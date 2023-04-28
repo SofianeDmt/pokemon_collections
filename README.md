@@ -2,6 +2,8 @@
 
 [CardDexPokemon](https://pokemon-collections.vercel.app/) est un site web qui aide les collectionneurs de cartes Pokémon à trouver et lister les cartes manquantes ou les cartes qu'ils possèdent déjà à leurs collections.
 
+Je m'appuie sur l'API [Pokémon TCG API](https://docs.pokemontcg.io/) pour récupérer les données des cartes Pokémon.
+
 Les technologies imposés étaient ReactJS pour le front et NodeJS pour le back donc j'ai décidé d'utiliser le framework NextJS pour le projet complet et de l'écrire en Typescript.
 
 Pour la partie style j'ai plutôt opté pour TailwindCSS car puissant et facile à gérer pour le respsonsive.
