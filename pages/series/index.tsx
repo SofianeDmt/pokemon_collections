@@ -22,7 +22,7 @@ export default function Series(): JSX.Element {
         <main className="flex min-h-screen flex-wrap items-center justify-around p-10 bg-gray-200 text-black">
             {sortedCardsBySeries &&
             <div>
-                <h2 className="text-4xl font-black text-center">Tout les Sets disponible</h2>
+                <h2 className="text-4xl font-black text-center">Tous les sets disponibles</h2>
             </div>
             }
             <div className="flex flex-col w-full h-full">
